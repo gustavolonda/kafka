@@ -10,6 +10,9 @@ services:
     - ./data/zookeeper-1/:/tmp/zookeeper/
     networks:
     - kafka
+    ports:
+      - "2181:2181"
+
   kafka-1:
     restart: always
     container_name: kafka-1
@@ -22,6 +25,8 @@ services:
     - kafka
     links:
     - zookeeper-1
+    ports:
+      - "9092:9092"
 
 networks: 
   kafka:
