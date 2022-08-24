@@ -1,0 +1,14 @@
+FROM openjdk:8-jre
+
+COPY kafka/lib/kafka ./kafka
+
+RUN  ls /kafka
+
+
+RUN  chmod 777 /kafka/bin/kafka-server-start.sh
+RUN  chmod 777 /kafka/bin/kafka-run-class.sh        
+RUN chmod 777  /kafka/bin/zookeeper-server-start.sh
+COPY start-zookeeper.sh  /usr/bin
+RUN chmod 777  /usr/bin/start-zookeeper.sh
+
+CMD ["start-zookeeper.sh"]

@@ -1,0 +1,57 @@
+{
+  "schema_version":     1,
+  "name":               "KAFKA",
+  "version":            "3.1.0-1.3.1.0.p0.35",
+  "extraVersionInfo": {
+    "fullVersion":        "3.1.0-1.3.1.0.p0.35-el7",
+    "baseVersion":        "kafka3.1.0",
+    "patchCount":         "0"
+  },
+
+  "depends":            "CDH (>= 5.2), CDH (<< 6.0)",
+
+  "replaces":           "CLABS_KAFKA",
+
+  "setActiveSymlink":   true,
+
+  "scripts": {
+    "defines": "kafka_env.sh"
+  },
+
+  "packages": [
+    { "name":    "kafka",
+      "version": "1.0.1+kafka3.1.0"
+    }
+    ,{ "name":    "kafka-mirror-maker",
+      "version": "1.0.1+kafka3.1.0"
+    }
+    ,{ "name":    "kafka-server",
+      "version": "1.0.1+kafka3.1.0"
+    }
+  ],
+
+  "components": [
+    { "name":     "kafka",
+      "version":  "1.0.1-kafka3.1.0",
+      "pkg_version":  "1.0.1+kafka3.1.0",
+      "pkg_release": "1.3.1.0.p0.40"
+    }
+  ],
+
+  "provides": [
+        "kafka"
+  ],
+
+  "users": {
+     "kafka": {
+       "longname"    : "Kafka",
+       "home"        : "/var/lib/kafka",
+       "shell"       : "/sbin/nologin",
+       "extra_groups" : [ ]
+     }
+  },
+
+  "groups": [
+     "kafka"
+  ]
+}

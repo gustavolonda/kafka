@@ -1,0 +1,86 @@
+{
+    "kafka-broker-api-versions": {
+      "destination": "/usr/bin/kafka-broker-api-versions",
+      "source": "bin/kafka-broker-api-versions",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-config": {
+      "destination": "/usr/bin/kafka-config",
+      "source": "bin/kafka-config",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-console-consumer": {
+      "destination": "/usr/bin/kafka-console-consumer",
+      "source": "bin/kafka-console-consumer",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-console-producer": {
+      "destination": "/usr/bin/kafka-console-producer",
+      "source": "bin/kafka-console-producer",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-consumer-groups": {
+      "destination": "/usr/bin/kafka-consumer-groups",
+      "source": "bin/kafka-consumer-groups",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-consumer-offset-checker": {
+      "destination": "/usr/bin/kafka-consumer-offset-checker",
+      "source": "bin/kafka-consumer-offset-checker",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-consumer-perf-test": {
+      "destination": "/usr/bin/kafka-consumer-perf-test",
+      "source": "bin/kafka-consumer-perf-test",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-preferred-replica-election": {
+      "destination": "/usr/bin/kafka-preferred-replica-election",
+      "source": "bin/kafka-preferred-replica-election",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-producer-perf-test": {
+      "destination": "/usr/bin/kafka-producer-perf-test",
+      "source": "bin/kafka-producer-perf-test",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-reassign-partitions": {
+      "destination": "/usr/bin/kafka-reassign-partitions",
+      "source": "bin/kafka-reassign-partitions",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-run-class": {
+      "destination": "/usr/bin/kafka-run-class",
+      "source": "bin/kafka-run-class",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-sentry": {
+      "destination": "/usr/bin/kafka-sentry",
+      "source": "bin/kafka-sentry",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-topics": {
+      "destination": "/usr/bin/kafka-topics",
+      "source": "bin/kafka-topics",
+      "priority": 10,
+      "isDirectory": false
+    }
+    ,"kafka-conf": {
+      "destination": "/etc/kafka/conf",
+      "source": "etc/kafka/conf.dist",
+      "priority": 10,
+      "isDirectory": true
+    }
+}
